@@ -64,6 +64,8 @@ function calculation(input){
     let data = input.toString().split("")
     if(data.length!=4 && new Set(data) != 4){
         alert("Enter four-digit number with different digits")
+        let input = document.getElementById("input")
+        input.value = ""
         return 0;
     }
     let array = []
